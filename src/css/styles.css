@@ -27,3 +27,12 @@ li {
 ul {
   padding-inline-start: 20px;
 }
+
+/* .load-more{
+  opacity: 1;
+  visibility: visible;
+} */
+
+.load-more.hidden {
+display: none;
+}
