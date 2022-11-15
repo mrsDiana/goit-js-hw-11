@@ -28,6 +28,16 @@ ul {
   padding-inline-start: 20px;
 }
 
+p {
+  margin: 0;
+}
+
+
+
+.load-more{
+  display: block;
+  margin: 30px auto 0;
+}
 
 .load-more.hidden {
 display: none;
@@ -45,20 +55,29 @@ display: flex;
 }
 
 .info {
+  height: 50px;
       display:flex;
       justify-content: space-between;
+      align-items: center;
 }
 
 .photo-card {
+  width: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+
+
+
 img{
-  width: 300px;
-  height: auto;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
+
 
 b {
   display: block;

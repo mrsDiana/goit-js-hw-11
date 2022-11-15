@@ -1,8 +1,6 @@
 import './css/styles.css';
 import Notiflix from 'notiflix';
 import NewApiService from './js/fetchImages';
-// import SimpleLightbox from "simplelightbox";
-// import "simplelightbox/dist/simple-lightbox.min.css";
 const form = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more');
@@ -13,7 +11,7 @@ form.addEventListener('submit', searchImages);
 loadMoreBtn.addEventListener('click', onLoadMore);
 
 function onLoadMore() {
-  newApiService.fetchImages().then(resultOfSerch).catch(onFetchError);
+  newApiService.fetchImages();
 }
 
 function searchImages(e) {
@@ -22,7 +20,6 @@ function searchImages(e) {
   const {
     elements: { searchQuery },
   } = e.currentTarget;
-  const totalHits = localStorage.getItem('total-hits');
   if (!searchQuery.value) {
     resetResult();
     Notiflix.Notify.failure(
@@ -31,10 +28,8 @@ function searchImages(e) {
     return;
   }
   newApiService.page = 1;
-  newApiService.query = searchQuery.value;
+  newApiService.query = searchQuery.value.trim();
   newApiService.fetchImages();
-//   let lightbox = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: '250'});
-// lightbox.refresh();
 }
 
 function resetResult() {
