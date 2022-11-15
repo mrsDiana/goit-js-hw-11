@@ -2,10 +2,9 @@ import Notiflix from 'notiflix';
 const axios = require('axios').default;
 export default class NewApiService {
   constructor() {
-    this.totalHits = 0;
     this.serchQuery = '';
     this.page = 1;
-    this.perPage = 40;
+    this.perPage = 5;
     this.gallery = document.querySelector('.gallery');
     this.loadMoreBtn = document.querySelector('.load-more');
   }
@@ -21,26 +20,36 @@ export default class NewApiService {
       return data;
     } catch (error) {
     console.log(error);
-        Notiflix.Notify.failure(
+       return Notiflix.Notify.failure(
           'Sorry, there are no images matching your search query. Please try again.'
         );
     }
   };
 
  resultOfSerch(data) {
-  this.totalHits = data.totalHits;
+  localStorage.setItem('total-hits', data.totalHits);
   const images=data.hits;
     if (images.length === 0) {
       throw new Error();
     } else if (images.length >= this.perPage) {
       this.mapSerchResult(images);
       this.removeHiddenBtn();
+      if (this.page === 1) {
+        Notiflix.Notify.info(
+          `Hooray! We found ${data.totalHits} images.`
+        );
+      }
     } else {
       this.mapSerchResult(images);
       Notiflix.Notify.info(
         "We're sorry, but you've reached the end of search results."
       );
       this.addHiddenBtn();
+      if (this.page === 1) {
+        Notiflix.Notify.info(
+          `Hooray! We found ${data.totalHits} images.`
+        );
+      }
     }
   }
 
@@ -48,7 +57,8 @@ export default class NewApiService {
     const images = data
       .map(
         ({ webformatURL, tags, likes, views, comments, downloads }) =>
-          `<img src="${webformatURL}" alt="${tags}" loading="lazy" />
+          `<div class="photo-card">
+          <img src="${webformatURL}" alt="${tags}" loading="lazy" />
   <div class="info">
     <p class="info-item">
       <b>Likes</b>
@@ -66,6 +76,7 @@ export default class NewApiService {
       <b>Downloads</b>
       ${downloads}
     </p>
+  </div>
   </div>`
       )
       .join('');

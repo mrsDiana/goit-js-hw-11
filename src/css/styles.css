@@ -28,11 +28,61 @@ ul {
   padding-inline-start: 20px;
 }
 
-/* .load-more{
-  opacity: 1;
-  visibility: visible;
-} */
 
 .load-more.hidden {
 display: none;
+}
+
+.search-form{
+text-align: center;
+margin-bottom: 30px;
+}
+
+.gallery {
+display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info {
+      display:flex;
+      justify-content: space-between;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img{
+  width: 300px;
+  height: auto;
+}
+
+b {
+  display: block;
+}
+
+
+.info-item {
+  text-align: center;
+}
+
+input {
+  height: 30px;
+  border-radius: 4px;
+  border-color: pink;
+  background-color: pink;
+}
+
+button {
+  text-align: center;
+height: 30px;
+width: 100px;
+    border-radius: 4px;
+    border: 2px transparent;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(112, 201, 104);
 }

@@ -14,12 +14,13 @@ function onLoadMore() {
   newApiService.fetchImages().then(resultOfSerch).catch(onFetchError);
 }
 
-async function searchImages(e) {
+function searchImages(e) {
   e.preventDefault();
   resetResult();
   const {
     elements: { searchQuery },
   } = e.currentTarget;
+  const totalHits = localStorage.getItem('total-hits');
   if (!searchQuery.value) {
     resetResult();
     Notiflix.Notify.failure(
@@ -29,13 +30,11 @@ async function searchImages(e) {
   }
   newApiService.page = 1;
   newApiService.query = searchQuery.value;
-  const fetchImg = await newApiService.fetchImages();
-  const promise = await 
-  Notiflix.Notify.info(
-    `Hooray! We found ${newApiService.totalHits} images.`
-  );
+  newApiService.fetchImages();
 }
 
 function resetResult() {
+  newApiService.addHiddenBtn();
+
   gallery.innerHTML = '';
 }
