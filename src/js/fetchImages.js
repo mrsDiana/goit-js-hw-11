@@ -11,7 +11,7 @@ export default class NewApiService {
     this.a = 0;
     this.serchQuery = '';
     this.page = 1;
-    this.perPage = 5;
+    this.perPage = 40;
     this.gallery = document.querySelector('.gallery');
     this.loadMoreBtn = document.querySelector('.load-more');
   }
@@ -43,6 +43,7 @@ export default class NewApiService {
       this.mapSerchResult(images);
       this.numberOfRezult(data.totalHits);
       this.removeHiddenBtn();
+
     } else {
       this.mapSerchResult(images);
       this.numberOfRezult(data.totalHits);
@@ -105,6 +106,16 @@ export default class NewApiService {
 
   addHiddenBtn() {
     this.loadMoreBtn.classList.add('hidden');
+  }
+
+  scroll () {
+      const { height: cardHeight } = document
+  .querySelector(".gallery")
+  .firstElementChild.getBoundingClientRect();
+window.scrollBy({
+  top: cardHeight * 2,
+  behavior: "smooth",
+});
   }
 
   get query() {

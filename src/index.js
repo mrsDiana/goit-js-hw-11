@@ -10,8 +10,9 @@ form.addEventListener('submit', searchImages);
 
 loadMoreBtn.addEventListener('click', onLoadMore);
 
-function onLoadMore() {
-  newApiService.fetchImages();
+async function onLoadMore() {
+  const fetchImg = await newApiService.fetchImages();
+  const scroll = await  newApiService.scroll ();
 }
 
 function searchImages(e) {
@@ -37,4 +38,3 @@ function resetResult() {
 
   gallery.innerHTML = '';
 }
-
