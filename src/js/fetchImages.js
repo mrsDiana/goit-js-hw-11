@@ -1,4 +1,6 @@
 import Notiflix from 'notiflix';
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
 const axios = require('axios').default;
 export default class NewApiService {
   constructor() {
@@ -27,6 +29,9 @@ export default class NewApiService {
   };
 
  resultOfSerch(data) {
+//   let lightbox = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: '250'});
+// lightbox.refresh();
+  
   localStorage.setItem('total-hits', data.totalHits);
   const images=data.hits;
     if (images.length === 0) {
@@ -56,9 +61,10 @@ export default class NewApiService {
   mapSerchResult(data) {
     const images = data
       .map(
-        ({ webformatURL, tags, likes, views, comments, downloads }) =>
+        ({ webformatURL, tags, likes, views, comments, downloads,largeImageURL}) =>
           `<div class="photo-card">
-          <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+          <a href="${largeImageURL}"><img src="${webformatURL}" alt="${tags}" loading="lazy" /></a>
+          
   <div class="info">
     <p class="info-item">
       <b>Likes</b>

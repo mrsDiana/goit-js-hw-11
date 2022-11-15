@@ -1,6 +1,8 @@
 import './css/styles.css';
 import Notiflix from 'notiflix';
 import NewApiService from './js/fetchImages';
+// import SimpleLightbox from "simplelightbox";
+// import "simplelightbox/dist/simple-lightbox.min.css";
 const form = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more');
@@ -31,6 +33,8 @@ function searchImages(e) {
   newApiService.page = 1;
   newApiService.query = searchQuery.value;
   newApiService.fetchImages();
+//   let lightbox = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: '250'});
+// lightbox.refresh();
 }
 
 function resetResult() {
@@ -38,3 +42,4 @@ function resetResult() {
 
   gallery.innerHTML = '';
 }
+
