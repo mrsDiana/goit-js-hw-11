@@ -22,7 +22,6 @@ export default class NewApiService {
       const response = await axios.get(
         `${BASE_URL}/api/?key=${KEY}&q=${this.serchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${this.page}&per_page=${this.perPage}`
       );
-      // const number = await numberOfRezult (response.data.totalHits);
       const data = await this.resultOfSerch(response.data);
       this.page += 1;
       return data;
@@ -105,16 +104,6 @@ export default class NewApiService {
 
   addHiddenBtn() {
     this.loadMoreBtn.classList.add('hidden');
-  }
-
-  scroll () {
-      const { height: cardHeight } = document
-  .querySelector(".gallery")
-  .firstElementChild.getBoundingClientRect();
-window.scrollBy({
-  top: cardHeight * 2,
-  behavior: "smooth",
-});
   }
 
   get query() {

@@ -1,6 +1,7 @@
 import './css/styles.css';
 import Notiflix from 'notiflix';
 import NewApiService from './js/fetchImages';
+import scrollBy from './js/scroll';
 const form = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more');
@@ -12,7 +13,7 @@ loadMoreBtn.addEventListener('click', onLoadMore);
 
 async function onLoadMore() {
   const fetchImg = await newApiService.fetchImages();
-  const scroll = await  newApiService.scroll ();
+  const scroll = await  scrollBy.scroll ();
 }
 
 function searchImages(e) {
