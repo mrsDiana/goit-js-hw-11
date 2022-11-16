@@ -59,23 +59,28 @@ display: flex;
       display:flex;
       justify-content: space-between;
       align-items: center;
+      margin-top: 10px;
 }
 
 .photo-card {
-  width: 300px;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+}
+
+a{
+  width: 300px;
+  height: 200px;
 }
 
 
-
-
 img{
-  height: 100%;
+  height: auto;
   width: 100%;
-  background-size: cover;
+  object-fit: cover;
 }
 
 

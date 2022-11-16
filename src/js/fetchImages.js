@@ -39,19 +39,18 @@ export default class NewApiService {
     const images = data.hits;
     if (images.length === 0) {
       throw new Error();
-    } else if (images.length >= this.perPage) {
-      this.mapSerchResult(images);
-      this.numberOfRezult(data.totalHits);
-      this.removeHiddenBtn();
-
     } else {
       this.mapSerchResult(images);
-      this.numberOfRezult(data.totalHits);
-      Notiflix.Notify.info(
-        "We're sorry, but you've reached the end of search results."
-      );
-      this.addHiddenBtn();
-    }
+        this.numberOfRezult(data.totalHits);
+      if (images.length >= this.perPage) {
+        this.removeHiddenBtn();
+      } else {
+        Notiflix.Notify.info(
+          "We're sorry, but you've reached the end of search results."
+        );
+        this.addHiddenBtn();
+        }
+    } 
   }
 
   numberOfRezult(number) {
