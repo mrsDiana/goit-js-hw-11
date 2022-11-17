@@ -42,12 +42,12 @@ export default class NewApiService {
       this.mapSerchResult(images);
         this.numberOfRezult(data.totalHits);
       if (images.length >= this.perPage) {
-        this.removeHiddenBtn();
+        // this.removeHiddenBtn();
       } else {
         Notiflix.Notify.info(
           "We're sorry, but you've reached the end of search results."
         );
-        this.addHiddenBtn();
+        // this.addHiddenBtn();
         }
     } 
   }
@@ -98,13 +98,13 @@ export default class NewApiService {
     lightbox.refresh();
   }
 
-  removeHiddenBtn() {
-    this.loadMoreBtn.classList.remove('hidden');
-  }
+  // removeHiddenBtn() {
+  //   this.loadMoreBtn.classList.remove('hidden');
+  // }
 
-  addHiddenBtn() {
-    this.loadMoreBtn.classList.add('hidden');
-  }
+  // addHiddenBtn() {
+  //   this.loadMoreBtn.classList.add('hidden');
+  // }
 
   get query() {
     return this.serchQuery;

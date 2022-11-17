@@ -9,11 +9,13 @@ const newApiService = new NewApiService();
 
 form.addEventListener('submit', searchImages);
 
-loadMoreBtn.addEventListener('click', onLoadMore);
+// loadMoreBtn.addEventListener('click', onLoadMore);
 
 async function onLoadMore() {
   const fetchImg = await newApiService.fetchImages();
+  const infiniteScroll = await loading.classList.remove('show');
   const scroll = await  scrollBy.scroll ();
+  
 }
 
 function searchImages(e) {
@@ -35,7 +37,24 @@ function searchImages(e) {
 }
 
 function resetResult() {
-  newApiService.addHiddenBtn();
-
+  // newApiService.addHiddenBtn();
   gallery.innerHTML = '';
 }
+
+
+/* Infinite Scroll*/
+const loading = document.querySelector('.loading');
+window.addEventListener('scroll', () => {
+	const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+	
+	console.log( { scrollTop, scrollHeight, clientHeight });
+	
+	if(clientHeight + scrollTop >= scrollHeight - 1) {
+		showLoading();
+	}
+});
+
+function showLoading() {
+	loading.classList.add('show');
+	setTimeout(onLoadMore, 1000)
+} 
