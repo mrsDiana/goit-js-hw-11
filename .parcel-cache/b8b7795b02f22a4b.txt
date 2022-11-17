@@ -1,4 +1,4 @@
-5005
+5007
 76C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\yaml\package.json133131116092458255 0
 62C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\nan133131122338861976 1
 106C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\transformer-posthtml\src\loadPlugins.js133131115972119701 0
@@ -72,7 +72,7 @@
 88C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\packager-html\LICENSE133131115927229576 0
 76C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@msgpackr-extract133131121628539758 1
 79C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\color-name\README.md133131115973751130 0
-56C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\.gitignore133131862363132220 0
+56C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\.gitignore133131898470074407 0
 73C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\fastq\bench.js133131115959666939 0
 74C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\infinite-scroll133131122267299141 1
 87C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\workers\lib\child.js133131116024119994 0
@@ -136,7 +136,7 @@
 87C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@swc\helpers\src\_type_of.js133131116165287354 0
 83C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\postcss-value-parser\lib133131122382351255 1
 93C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\caniuse-lite\data\features\opus.js133131116228977629 0
-50C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist133131878416491612 1
+50C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist133131899603919236 1
 90C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\caniuse-lite\data\regions\PM.js133131116230967191 0
 83C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\to-regex-range\README.md133131115974367243 0
 84C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\csso\lib\replace\index.js133131116082177133 0
@@ -153,6 +153,7 @@
 58C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\package.json133130267980000000 0
 84C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\fast-glob\out\utils\fs.js133131116040700678 0
 97C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\svgo\plugins\addClassesToSVGElement.js133131116037830205 0
+68C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.ff638280.js133131899603600087 0
 76C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\type-fest\license133131115925858042 0
 89C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\source-map-support\register.js133131115972750682 0
 75C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\nan\CHANGELOG.md133131116073337470 0
@@ -166,7 +167,7 @@
 109C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\caniuse-lite\data\features\document-execcommand.js133131116174656735 0
 73C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\yaml\schema.js133131116083333974 0
 109C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\posthtml-include\node_modules\posthtml-parser\dist133131122390082226 1
-55C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\README.md133130267980000000 0
+55C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\README.md133131897087020090 0
 67C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\posthtml133131122384655784 1
 72C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\color-convert133131122131678125 1
 90C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\utils\src\countLines.js133131116041534863 0
@@ -242,7 +243,6 @@
 63C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\.bin133131121594104555 1
 77C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\.package-lock.json133131116254191442 0
 65C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\base-x133131121967620060 1
-68C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.975ef6c8.js133131878416368335 0
 93C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\xxhash-wasm\esm\xxhash-wasm.js.map133131116024886072 0
 75C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\svgo\lib\svgo.js133131116137950666 0
 96C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\utils\test\DefaultMap.test.js133131116053099558 0
@@ -434,6 +434,7 @@
 91C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@jridgewell\sourcemap-codec\dist133131121617605412 1
 86C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\normalize-path\package.json133131115926117372 0
 91C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\packager-js\src\utils.js133131116062249631 0
+68C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.0b517b5f.js133131899603600087 0
 90C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\caniuse-lite\data\regions\QA.js133131116231973465 0
 101C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\htmlnano\docs\versioned_docs\version-1.1.1133131122254925683 1
 69C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\fill-range133131122236549477 1
@@ -1638,7 +1639,7 @@
 80C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\sass\types\index.d.ts133131116136554721 0
 78C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\css-tree\lib\walker133131122177170075 1
 74C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\sass\types\util133131122419568469 1
-61C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.html133131875808965096 0
+61C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.html133131899603590158 0
 105C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\core\test\fixtures\parcel\package.json133131116170059558 0
 94C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\sass\types\value\argument_list.d.ts133131116124113098 0
 96C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\caniuse-lite\data\features\imports.js133131116191600471 0
@@ -3882,7 +3883,6 @@
 101C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\caniuse-lite\data\features\style-scoped.js133131116233875946 0
 137C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts\index.linux-arm64-musl.node133131116123845548 0
 104C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\runtime-js\lib\helpers\cacheLoader.js133131116035330999 0
-73C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.77a9bc14.css.map133131875809212858 0
 98C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\node-resolver-core\test\fixture133131121751182822 1
 110C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\caniuse-lite\data\features\subresource-integrity.js133131116233892478 0
 96C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\caniuse-lite\data\features\svg-css.js133131116234188139 0
@@ -4713,6 +4713,7 @@
 116C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\core\test\fixtures\duplicate-targets\package.json133131116166447357 0
 121C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\core\test\fixtures\custom-format-mismatch\package.json133131116166323184 0
 123C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\core\test\fixtures\custom-format-infer-type\package.json133131116166288643 0
+72C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.0b517b5f.js.map133131899603859396 0
 106C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\core\test\fixtures\context\package.json133131116166244306 0
 119C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\core\test\fixtures\config-plugin-not-found\.parcelrc133131116036063927 0
 120C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc133131115929745970 0
@@ -4997,8 +4998,9 @@
 74C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\.bin\semver.ps1133131116245665021 0
 68C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\.bin\svgo133131116245699010 0
 70C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\node_modules\.bin\terser133131116245725432 0
-69C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.77a9bc14.css133131875809083190 0
-72C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.975ef6c8.js.map133131878416458096 0
+69C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.01fc6409.css133131899603580143 0
+73C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.01fc6409.css.map133131899603849439 0
+72C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\dist\index.ff638280.js.map133131899603859396 0
 78C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\assets\actions-config-step-1.png133130267980000000 0
 78C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\assets\actions-config-step-2.png133130267980000000 0
 69C:\Users\Dianochka\Desktop\goit\goit-js-hw-11\assets\how-it-works.png133130267980000000 0
